@@ -8,3 +8,12 @@ Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzion
 Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
+
+## procedimento
+
+- chiedo all'utente un parametro tra pari e dispari e chiedo all'utente di inserire un numero da 1 a 5
+- con una funzione genero un numero random per il pc
+- con una funzione sommo i due numeri e return un valore tra pari o dispari
+- **se** il valore sarà uguale a quello scelto inizialmente dall'utente 
+    - allora quest'ultimo avrà vinto
+    - altrimenti no
