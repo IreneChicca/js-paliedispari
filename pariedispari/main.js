@@ -65,7 +65,5 @@ else {
     resultEl.innerHTML = 'hai perso ):'
 
 }
-console.log(choice)
-console.log(userNum)
-console.log(finalNum)
+
 
