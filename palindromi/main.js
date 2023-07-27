@@ -6,10 +6,28 @@ const wordL = userWord.length - 1;
 
 let readWord = "";
 
-for (let i = wordL; i >= 0; i--) {
+
+function read(val) {
+
+    for (let i = wordL; i >= 0; i--) {
 
 
-    readWord += userWord[i];
-    console.log(readWord)
+        readWord += val[i];
+
+    }
+    return readWord
+
+}
+
+
+const reversedWord = read(userWord)
+
+if (userWord == reversedWord) {
+
+    alert("palindromo yes")
+
+}
+else {
+    alert("palindromo nop")
 
 }
