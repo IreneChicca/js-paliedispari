@@ -9,6 +9,7 @@
 
 const choice = prompt("Scegli tra \"pari\" o \"dispari\"")
 const userNum = parseInt(prompt("Scegli un numero tra 1 e 5"))
+const pcNumber = randomNum();
 
 // prendo elementi di interesse per stampare
 
@@ -18,20 +19,35 @@ const pcEl = document.getElementById("pc-num")
 const resultEl = document.getElementById("result")
 
 
+
 // stampo per far vedere all'utente
+
 
 choiceEl.innerHTML = "Hai scelto: " + choice;
 userEl.innerHTML = "Il tuo numero è: " + userNum;
-pcEl.innerHTML = "Il numero dell'avversario è: " + randomNum();
+pcEl.innerHTML = "Il numero dell'avversario è: " + pcNumber;
 
 // - con una funzione genero un numero random per il pc
 
 function randomNum() {
-    const random = Math.floor(Math.random() * (5)) + 1;
-
+    const random = Math.floor(Math.random() * 5) + 1;
     return random;
-}
 
+    // (max - min + 1 ) + min
+    // console.log(Math.floor(Math.random() * (5 - 1 + 1) + 1))
+
+    // 0 - 9
+    // Math.floor(Math.random() * 10);
+
+    // // 1 - 10
+    // Math.floor(Math.random() * 10) + 1;
+
+    // // 10 - 20
+    // Math.floor(Math.random() * 10) + 10;
+
+    // // 20 - 30
+    // Math.floor(Math.random() * 10) + 20;
+}
 
 
 
@@ -47,7 +63,7 @@ function sumNum(val1, val2) {
 }
 
 
-const finalNum = sumNum(randomNum(), userNum)
+const finalNum = sumNum(pcNumber, userNum)
 
 
 
@@ -67,3 +83,4 @@ else {
 }
 
 
+//  ho visto che quando richiamo la funzione random piu volte, (giustamente) genera ogni volta un nuovo numero, esiste un modo per incastonare il primo valore generato cosi da poter stampare messaggi ecc? 

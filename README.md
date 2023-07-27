@@ -2,6 +2,13 @@
 Chiedere all'utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 
+## procedimento
+
+- chiedo una parola all'utente e la inserisco in una variabile
+- creo una funzione che legga la parola lettera per lettera
+
+
+
 # Pari e Dispari
 L'utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
